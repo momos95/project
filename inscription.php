@@ -68,7 +68,6 @@
                         <div class="form-group">
                             <div class="col-md-offset-4 col-md-10">
                                 <input type="submit" value="Inscription" class="btn btn-primary" name='btnInscr'/>
-                                <input type="reset" value="Réinitialiser" class="btn btn-primary" />
                             </div>
                         </div>
                     </form>
