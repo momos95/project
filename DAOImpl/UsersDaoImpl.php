@@ -1,7 +1,7 @@
 <?php
 
 
-class UsersDaoImpl implements UserDAO{
+class UsersDaoImpl implements IUserDAO{
   
     protected $base ;
 
