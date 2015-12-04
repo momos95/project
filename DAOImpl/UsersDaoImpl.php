@@ -32,6 +32,7 @@ class UsersDaoImpl implements UserDAO{
         $req->execute(array($id_frais));
         $res = $req->fetch();
         return $res ;
+        test;
     }
 
     public function getNotesFrais(\User $user) {
