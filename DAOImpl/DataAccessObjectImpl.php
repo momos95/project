@@ -19,4 +19,8 @@ class DataAccessObjectImpl implements IDataAccessObject{
         return $this->base ;
     }
     
+    public static function closeBase() {
+            $this->base.closeCursor();               
+    }
+    
 }

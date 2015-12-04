@@ -15,7 +15,7 @@
         
     }
 
-    public function rejeterNoteFrais(NoteFrais $note) {
+    public function rejeterNoteFrais(\NoteFrais $note) {
         
     }
 
