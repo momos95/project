@@ -1,6 +1,6 @@
 <?php
 
-interface ManagerDAO extends UsersDAO{
+interface IManagerDAO extends IUsersDAO{
     
     //La liste des agents qu'il gère.
     public function getListAgent() ;

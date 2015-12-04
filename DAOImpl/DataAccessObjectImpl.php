@@ -1,7 +1,7 @@
 <?php
 
 
-class DataAccessObjectImpl implements DataAccessObject{
+class DataAccessObjectImpl implements IDataAccessObject{
     
     private $loginBdd = "root";
     private $mdpBdd = "";

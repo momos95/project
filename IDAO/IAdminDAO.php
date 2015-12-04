@@ -1,6 +1,6 @@
 <?php
 
-interface AdminDAO extends ManagerDAO {
+interface IAdminDAO extends IManagerDAO {
     
     //Changer Le statut d'un User
     public function changerStatutUser($user);

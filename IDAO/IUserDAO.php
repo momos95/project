@@ -10,7 +10,7 @@
  *
  * @author mamadou
  */
-interface UserDAO {
+interface IUserDAO {
      //Utilisateur existe dans la base.
     public function estUser(User $user);
     

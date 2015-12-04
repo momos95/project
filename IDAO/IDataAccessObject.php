@@ -1,6 +1,6 @@
 <?php
 
-interface DataAccessObject {
+interface IDataAccessObject {
     
     
     //Connexion à la base de données.
