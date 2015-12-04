@@ -77,22 +77,6 @@
                 
                 </div>
             </div>
-            
-            <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-            <div class="navbar-collapse collapse">
-                <?php
-                
-                //if(isset ($_SESSION['is_user']) && $_SESSION['is_user']){
-                ?>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="">Connexion</a></li>
-                    <li><a href="">Inscription</a></li>
-                    <li><a>Déconnexion</a></li>
-                </ul> 
-            </div>
-            </div>
-            </div>
                 <?php
             
                 //Contrôle si les champs sont vides

@@ -64,7 +64,7 @@ and open the template in the editor.
                  <div class="col-md-4">
                     <section id="socialLoginForm">
                         <p>
-                            <a href=""> S'inscrire en tant que nouvel utilisateur ? </a>
+                            <a href="inscription.php"> S'inscrire en tant que nouvel utilisateur ? </a>
                         </p>
                         <p>
                             <a href=""> Identifiant et/ou mot de passe oublié(s) ?</a>
