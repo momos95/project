@@ -12,6 +12,8 @@ class UsersDaoImpl implements UserDAO{
     
     
     public function ajouterFrais(\User $user,Frais $frais) {
+    
+        $sql_frais = "INSERT INTO frais(id,id_categorie,montant,id_devise,commentaire,date_frais) VALUES (:id,:id_categorie,:montant,:id_devise,:commentaire,:date_frais)" ;
         
         
     }
