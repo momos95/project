@@ -1,3 +1,4 @@
+
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -6,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <li><a href="" class = "navbar-brand">Business Expenses</a></li>
+            <li><a href="index.php" class = "navbar-brand">Business Expenses</a></li>
         </div>
         
     <div class="navbar-collapse collapse">
@@ -27,7 +28,7 @@
                 </ul>
             <?php }
             
-            if(!isset ($_SESSION['is_user']) || !$_SESSION['is_user']){
+            if(!isset ($_SESSION['is_user'])){
                 ?>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="">Connexion</a></li>

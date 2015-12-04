@@ -1,22 +1,23 @@
 <?php
 
+include_once '../IDAO/IDataAccessObject.php';
 
 class DataAccessObjectImpl implements IDataAccessObject{
     
-    private $loginBdd = "root";
-    private $mdpBdd = "";
-    private $nom_base ="gestion_note_de_frais";
-    private $host_base ="localhost";
-    private $base ;
-    
     public static function connectBase() {
+        
+        $loginBdd = "root";
+        $mdpBdd = "admin";
+        $nom_base ="gestion_notes_de_frais";
+        $host_base ="localhost";
+        
         try {
-            $this->base = new PDO ( 'mysql:host='.$this->host_base.';dbname='.$this->nom_base, $this->loginBdd, $this->mdpBdd );
+            $base = new PDO ( 'mysql:host='.$host_base.';dbname='.$nom_base, $loginBdd, $mdpBdd );
         }catch ( PDOException $e ) {
             die ( 'Erreur : ' . $e->getMessage () );
         }
-        $this->base->setAttribute ( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
-        return $this->base ;
+        $base->setAttribute ( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
+        return $base ;
     }
     
     public static function closeBase() {

@@ -1,6 +1,6 @@
 <?php
-
-
+include_once '../IDAO/IUserDAO.php' ;
+include_once 'DataAccessObjectImpl.php' ;
 class UsersDaoImpl implements IUserDAO{
   
     protected $base ;
@@ -50,12 +50,15 @@ class UsersDaoImpl implements IUserDAO{
         
     }
 
-    public function estUser(\User $user) {
-       $sql = "SELECT * FROM users where login = ? and mdp = ?";
+    public function estUser($login, $mdp) {
+       $sql = "SELECT mdp FROM users where login = ?";
        $req = $this->base->prepare($sql);
-       $req->execute(array($user->getLogin(),$user->getMdp()));
+       $req->execute(array($login));
        $res = $req->fetch();
-       return !empty($res['login']);
+       if(strcmp($res['mdp'],sha1($mdp)) === 0){
+           return true ;
+       }
+       return false ;
     }
 
     public function getFrais($id_frais) {
@@ -83,6 +86,14 @@ class UsersDaoImpl implements IUserDAO{
 
     public function supprimerFrais(\Frais $frais) {
         
+    }
+
+    public function getUser($login) {
+        $sql = "SELECT * from users where login =  ?" ;
+        $req = $this->base->prepare($sql);
+        $req->execute(array($login));
+        $res = $req->fetch();
+        return $res ;
     }
 
 //put your code here

@@ -29,29 +29,29 @@ and open the template in the editor.
                 
                 <section id="loginForm">
                     
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" method="post" action="controllers/loginController.php">
                         
                         <div class="form-group">
-                            <label class="col-md-10 text-danger"><strong><?=isset($_POST['erreur_login']) ? $_POST['erreur_login'] : "";?></strong></label>  
+                            <label class="col-md-10 text-danger"><strong><?=isset($_GET['erreur_login']) ? $_GET['erreur_login'] : "";?></strong></label>  
                         </div>
                         
                         <div class="form-group">     
                             <label class="col-md-4 control-label">Identifiant: </label>                            
                             <div class="col-md-6">    
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="login">
                             </div>
                         </div>
                         
                         <div class="form-group">     
                             <label class="col-md-4 control-label">Mot De Passe: </label>                            
                             <div class="col-md-6">    
-                                <input type="password" class="form-control">
+                                <input type="password" class="form-control" name="mdp">
                             </div>
                         </div>
                       
                         <div class="form-group">
                             <div class="col-md-offset-4 col-md-10">
-                                <input type="submit" value="Se Connecter" class="btn btn-primary" />
+                                <input type="submit" value="Se Connecter" class="btn btn-primary" name="submit"/>
                                 <input type="reset" value="Réinitialiser" class="btn btn-primary" />
                             </div>
                         </div>

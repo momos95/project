@@ -12,7 +12,7 @@
  */
 interface IUserDAO {
      //Utilisateur existe dans la base.
-    public function estUser(User $user);
+    public function estUser($login, $mdp);
     
     //Récupérer La liste des frais d'un user.
     public function getNotesFrais(User $user);
@@ -21,11 +21,14 @@ interface IUserDAO {
     public function getFrais($id_frais) ;
     
     //Ajouter un frais.
-    public function ajouterFrais(User $user);
+    public function ajouterFrais(Frais $frais, NoteFrais $note);
     
     //Supprimer un frais.
     public function supprimerFrais(Frais $frais);
     
     //Modifier un frais
     public function modifierFrais(Frais $frais);
+    
+    //Recupérer un User à partir de son login
+    public function getUser($login);
 }
