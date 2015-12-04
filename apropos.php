@@ -1,8 +1,3 @@
-<?php
-session_start();
-include_once './controllers/regles.php';
-?>
-
 <!DOCTYPE html>
 
 <html>
@@ -10,7 +5,7 @@ include_once './controllers/regles.php';
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap-celurean.css">
-        <title>B.E | Accueil </title>
+        <title>B. E. | A Propos</title>
     </head>
     <body>
         
@@ -20,11 +15,11 @@ include_once './controllers/regles.php';
         <br>
         
         <div class="container body-content">
-            <hr>
-            <p> Bonjour <?=print_r($_SESSION['user']); ?> </p>
-           
-        </div>
+            
+            <h2>Page de Description</h2>
+            
+            <hr/>
         
+        </div>
     </body>
-    
 </html>

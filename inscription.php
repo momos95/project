@@ -73,8 +73,11 @@
                     </form>
                     
                  </section>
-                
+                    
+                    <?php include './commun/footer.php'; ?>
+            
                 </div>
             </div>
+            
     </body>
 </html>

@@ -26,6 +26,7 @@ if($ok_submit){
              session_start();
              $_SESSION['is_user'] = TRUE ;
              $_SESSION['user'] = $user ;
+             $_SESSION['user_profil'] = $user->getProfil_id();
              
              header("Location: ../accueil.php");
          }
