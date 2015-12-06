@@ -7,7 +7,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <li><a href="index.php" class = "navbar-brand">Business Expenses</a></li>
+                <?php 
+                    if(isset($_SESSION['is_user'])){?>
+                        <li><a href="/appli1/project/accueil.php" class = "navbar-brand">Business Expenses</a></li>
+                    <?php }
+                    else{?>
+                        <li><a href="/appli1/project/index.php" class = "navbar-brand">Business Expenses</a></li>
+                    <?php }    
+                ?>
+                
         </div>
         
     <div class="navbar-collapse collapse">
@@ -27,7 +35,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="">Mes Notes de Frais</a></li>
                     <li><a href="">Paramètres</a></li>
-                    <li><a href="controllers/logoutController.php">Déconnexion</a></li>
+                    <li><a href="">Statisques</a></li>
+                    <li><a href="/appli1/project/controllers/logoutController.php">Déconnexion</a></li>
                 </ul>
             <?php }
             
@@ -35,15 +44,19 @@
             if(!isset ($_SESSION['is_user']) || !(isset($_SESSION['is_user']) && $_SESSION['is_user'] )){
                 ?>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="login.php">Connexion</a></li>
+                    <li><a href="/appli1/project/login.php">Connexion</a></li>
                 </ul>
             <?php }
             
             //Pour Que l'admin puisse ajouter un nouvel Utilisateur.
-            if(isset($_SESSION['is_user']) && $_SESSION['profil'] == 3){
+            if(isset($_SESSION['is_user']) && $_SESSION['user_profil'] == 3){
              ?>
                 <ul class="nav navbar-nav navbar-right">
-                     <li><a href="inscription.php">Add New User</a></li>
+                     <!--<li><a href="inscription.php">Utilisateurs</a></li>
+                     <li><a href="">Managers</a></li>
+                     <li><a href="">Catégories</a></li>
+                     <li><a href="">Devises</a></li>-->
+                     <li><a href="/appli1/project/views/admin/usersCheck.php">Administration</a></li>
                 </ul>
             <?php }
         ?>
