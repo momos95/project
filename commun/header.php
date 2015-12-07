@@ -7,28 +7,28 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-                <?php 
-                    if(isset($_SESSION['is_user'])){?>
-                        <li><a href="/appli1/project/accueil.php" class = "navbar-brand">Business Expenses</a></li>
-                    <?php }
-                    else{?>
-                        <li><a href="/appli1/project/index.php" class = "navbar-brand">Business Expenses</a></li>
-                    <?php }    
-                ?>
+        <?php 
+            if(isset($_SESSION['is_user'])){?>
+                <li><a href="/appli1/project/accueil.php" class = "navbar-brand">Business Expenses</a></li>
+            <?php }
+            else{?>
+                <li><a href="/appli1/project/index.php" class = "navbar-brand">Business Expenses</a></li>
+            <?php }    
+        ?>
                 
         </div>
         
     <div class="navbar-collapse collapse">
-        <?php
-        //Une fois connecté : on a pas besoin de ça.
-            if(!isset($_SESSION['is_user'])){?>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="apropos.php">A Propos</a></li>
-                    <li><a href="contacts.php">Contacts</a></li>
-                </ul>
+<?php
+//Une fois connecté : on a pas besoin de ça.
+    if(!isset($_SESSION['is_user'])){?>
+        <ul class="nav navbar-nav">
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="apropos.php">A Propos</a></li>
+            <li><a href="contacts.php">Contacts</a></li>
+        </ul>
 
-            <?php }
+    <?php }
             
             //Si on est connecté : possibilité de voir notre note de frais et de changer les param.
             if(isset ($_SESSION['is_user']) && $_SESSION['is_user']){?>
@@ -64,5 +64,3 @@
         
   </div>
 </div>
-
-<br><br>

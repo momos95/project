@@ -8,7 +8,7 @@ include_once './controllers/regles.php';
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-celurean.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <title>B.E | New User</title>
     </head>
     <body>
