@@ -41,7 +41,7 @@
 
                     <li><a href="controllers/logoutController.php">Déconnexion</a></li>
 
-                    <li><a href="../../controllers/logoutController.php">Déconnexion</a></li>
+                    <!--<li><a href="../../controllers/logoutController.php">Déconnexion</a></li> !-->
 
                 </ul>
             <?php }
