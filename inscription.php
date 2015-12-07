@@ -1,10 +1,15 @@
+<?php
+session_start();
+include_once './controllers/regles.php';
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-celurean.css">
-        <title>B.E | Connexion</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <title>B.E | New User</title>
     </head>
     <body>
         
@@ -73,10 +78,9 @@
                     </form>
                     
                  </section>
-                    
+                    <br>
                     <?php include './commun/footer.php'; ?>
-            
-                </div>
+                </div>    
             </div>
             
     </body>

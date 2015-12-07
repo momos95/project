@@ -32,19 +32,34 @@ if($ok_submit){
          }
          
          else{// Le couple (login,mdp) n'est pas reconnu.
+
              $erreur_login = "Mot De Passe et/ou Identifiants incorrects.";
              header("Location: ../index.php?erreur_login=$erreur_login");
+
+             $erreur_login = "<strong>Mot De Passe et/ou Identifiants incorrects.</strong>";
+             header("Location: ../login.php?erreur_login=$erreur_login");
+
              exit();
          }
     }
     else{// Les champs ne sont pas renseignés ou sont incorrects.
+
         $erreur_login = "Données incorrectes.";
         header("Location: ../index.php?erreur_login=$erreur_login");
+
+        $erreur_login = "<b>Données incorrectes.</b>";
+        header("Location: ../login.php?erreur_login=$erreur_login");
+
         exit();
     }
 }
 else{
+
     $erreur_login = "Erreur Fatale : Attention!!!";
     header("Location: ../index.php?erreur_login=$erreur_login");
+
+    $erreur_login = "<b>Erreur Fatale : Attention!!!</b>";
+    header("Location: ../login.php?erreur_login=$erreur_login");
+
     exit();
 }

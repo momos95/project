@@ -1,6 +1,7 @@
 <?php
 include_once '../IDAO/IUserDAO.php' ;
 include_once 'DataAccessObjectImpl.php' ;
+
 class UsersDaoImpl implements IUserDAO{
   
     protected $base ;
@@ -10,6 +11,13 @@ class UsersDaoImpl implements IUserDAO{
         $this->base = DataAccessObjectImpl::connectBase();
     }
     
+    public function __destruct() {
+        
+    }
+    
+    public static function closeBase() {
+            $this->base.closeCursor();               
+    }
     
     public function ajouterFrais(Frais $frais,  NoteFrais $note) {
     
@@ -96,5 +104,8 @@ class UsersDaoImpl implements IUserDAO{
         return $res ;
     }
 
-//put your code here
+    public function creerNoteFrais() {
+        
+    }
+
 }

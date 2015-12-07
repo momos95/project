@@ -4,8 +4,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-celurean.css">
-        <title>B. E. | A Propos</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <title>B. E. | A Propos </title>
     </head>
     <body>
         

@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-celurean.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <title>B.E | Connexion</title>
     </head>
     <body>
@@ -13,6 +13,7 @@
         
         <div class="container body-content">
         
+            <br>
             <br>
             
             <h2>Connexion</h2>
@@ -58,6 +59,7 @@
                 </div>
             
                  <div class="col-md-4">
+                     <br>
                     <section id="socialLoginForm">
                         <p>
                             <a href="inscription.php"> S'inscrire en tant que nouvel utilisateur ? </a>
