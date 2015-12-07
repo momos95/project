@@ -7,7 +7,7 @@ class DataAccessObjectImpl implements IDataAccessObject{
     public static function connectBase() {
         
         $loginBdd = "root";
-        $mdpBdd = "admin";
+        $mdpBdd = "";
         $nom_base ="gestion_notes_de_frais";
         $host_base ="localhost";
         
@@ -20,8 +20,6 @@ class DataAccessObjectImpl implements IDataAccessObject{
         return $base ;
     }
     
-    public static function closeBase() {
-            $this->base.closeCursor();               
-    }
+   
     
 }

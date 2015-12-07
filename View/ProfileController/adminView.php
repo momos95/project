@@ -1,5 +1,6 @@
+
 <?php
-include_once 'models/User.php';
+include_once '../../models/User.php';
 session_start();
 
 ?>
@@ -10,19 +11,17 @@ session_start();
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-celurean.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-celurean.css">
         <title>B.E | Accueil </title>
     </head>
     <body>
         
-        <?php include "./commun/header.php" ; ?>
+        <?php include "../../commun/header.php" ; ?>
         
         <div class="container body-content">
             <br>
             <br>
-            <p> Bonjour <?= 
-                            var_dump($_SESSION['user']); 
-                            header("Location: controllers/ProfileController.php");
+            <p> Bonjour <?php
                         ?> </p>
         </div>
         
