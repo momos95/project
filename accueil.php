@@ -29,6 +29,7 @@ include_once './controllers/regles.php';
             <p> Bonjour <?= 
                             var_dump($_SESSION['user']); 
                             header("Location: controllers/ProfileController.php");
+                            
                         ?> </p>
 
             <hr>
