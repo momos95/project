@@ -11,8 +11,12 @@
  * @author mamadou
  */
 interface IUserDAO {
+    
      //Utilisateur existe dans la base.
     public function estUser($login, $mdp);
+    
+    //Créer une note de frais 
+    public function creerNoteFrais();
     
     //Récupérer La liste des frais d'un user.
     public function getNotesFrais(User $user);
