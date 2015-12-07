@@ -4,7 +4,7 @@
     
  
     
-     public function ajouterCategorie(\Categorie $categorie) {
+    public function ajouterCategorie(\Categorie $categorie) {
         
     }
 

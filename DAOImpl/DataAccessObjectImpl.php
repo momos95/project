@@ -7,7 +7,7 @@ class DataAccessObjectImpl implements IDataAccessObject{
     public static function connectBase() {
         
         $loginBdd = "root";
-        $mdpBdd = "";
+        $mdpBdd = "admin";
         $nom_base ="gestion_notes_de_frais";
         $host_base ="localhost";
         

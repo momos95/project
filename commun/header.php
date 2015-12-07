@@ -38,7 +38,11 @@
                     <li><a href="">Mes Notes de Frais</a></li>
                     <li><a href="">Paramètres</a></li>
                     <li><a href="">Statisques</a></li>
+
                     <li><a href="controllers/logoutController.php">Déconnexion</a></li>
+
+                    <li><a href="../../controllers/logoutController.php">Déconnexion</a></li>
+
                 </ul>
             <?php }
             

@@ -4,7 +4,7 @@ session_start();
 
 if(isset($_SESSION['user']) && $_SESSION['user']->getProfil_id()== '3' )
 {
-    header("Location: ../View/ProfileController/adminView.php");
+    header("Location: ../views/admin/usersCheck.php");
 }
 
 ?>
